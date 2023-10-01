@@ -288,8 +288,8 @@
 			}
 
             if (totalQuestions >= 9){
-				document.getElementById("result").innerHTML = "非常感謝您完成了這份調查中所有的問題<br><br>請勿關閉此頁面，並將以下資料展示給物理治療師。<br><br> Your Total score is: " + totalScore + "<br> Your Subscore is: " + subScore;
-				var popup = showPopup("非常感謝您完成了這份調查中所有的問題<br><br>請勿關閉此頁面，並將以下資料展示給物理治療師。<br><br> Your Total score is: " + totalScore + "<br> Your Subscore is: " + subScore);
+				document.getElementById("result").innerHTML = "非常感謝您完成了這份調查中所有的問題<br><br>請勿關閉此頁面，並將你的分數寫在卡上，然後交給物理治療師。<br><br> 你的分數小計是: " + subScore + "/5" + "<br> 你的分數總計是: " + totalScore + "/9";
+				var popup = showPopup("非常感謝您完成了這份調查中所有的問題<br><br>請勿關閉此頁面，並將你的分數寫在卡上，然後交給物理治療師。<br><br> 你的分數小計是: " + subScore + "/5" + "<br> 你的分數總計是: " + totalScore + "/9");
 			} else {
 				document.getElementById("result").innerHTML = "你尚有" + (9 - totalQuestions)+ "條問題未回答<br>";
 				var popup = showPopup("你尚有" + (9 - totalQuestions)+ "條問題未回答。<br>請返回並繼續作答。");
