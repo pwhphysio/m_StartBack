@@ -145,6 +145,17 @@
 			font-size: 20px;
         }
 
+		.external-website-btn{
+			position: absolute;
+			top: 10px;
+			right: 110px;
+			padding: 17px 17px;
+			background-color: white;
+			color: black;
+			border-radius: 20px;
+			font-size: 20px;
+        }
+
 		.button {
 			display: inline-block;
 		}
@@ -227,6 +238,13 @@
             margin-right: 65px;
             margin-top: 20px;
         }
+
+		.external-website-btn{
+			transform: scale(2);
+            margin-right: 165px;
+            margin-top: 20px;
+        }
+
         #result {
             margin-top: 40px;
             font-size: 60px;
@@ -380,6 +398,17 @@
 		});
 
     </script>
+
+	<!-- Button element -->
+	<button class="external-website-btn" id="external-website-button">英文版</button>
+
+	<!-- JavaScript to handle the click event -->
+	<script>
+		var button = document.getElementById("external-website-button");
+		button.addEventListener("click", function() {
+			window.open('https://pwhphysio.github.io/m_StartBack_e/', '_blank');
+		});
+	</script>
 
 	<h2> 威爾斯親王醫院 物理治療部</h2>
 	<form>
